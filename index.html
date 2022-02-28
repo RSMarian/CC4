@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Forms Exercise</h1>
+
+<h2>Text Input</h2>
+    <input type="text" placeholder="Username">
+    <input type="text" placeholder="City" value="Cluj-Napoca">
+
+<h2>Email Input</h2>
+    <input type="email" placeholder="Email">
+
+<h2>Color Input</h2>
+    <input type="color">
+
+<h2>Number Input</h2>
+    <input type="number" min="5" max="225" step="25">
+</body>
+
+<h2>Password Input</h2>
+    <label for="password">Enter password:</label>
+    <input type="password" placeholder="Password" id="password">
+
+<h2>Form Input</h2>
+    <form action="https://www.google.com">
+        <input type="text" placeholder="Username" name="username">
+        <input type="password" placeholder="Password" name="password">
+        <button>Submit</button>
+    </form>
+
+<h2>Radio Buttons</h2>
+    <p>Pick a color...</p>
+    <input type="radio" id="red" name="colors">
+    <label for="red">Red</label>
+    <input type="radio" id="yellow" name="colors">
+    <label for="yellow">Yellow</label>
+    <input type="radio" id="blue" name="colors">
+    <label for="blue">Blue</label>
+</html>
+
+<h2>Reddit Search Input</h2>
+    <form action="https://www.reddit.com/search">
+        <div>
+            <label for="search">Search Term:</label>
+            <input type="text" placeholder="Search..." id="search" name="q">
+            
+        </div>
+        <div>
+            <label for="sort">Sort By:</label>
+            <select name="sort" id="">
+                <option value="top">Top</option>
+                <option value="new">New</option>
+                <option value="relevance">Relevance</option>
+            </select>
+        </div>
+        <input type="submit" value="Go">
+    </form>
+
+<h2>Checkboxes</h2>
+    
+    <input type="checkbox" id="likesdogs" checked> 
+    <label for="likesdogs">I like dogs</label>
+
+<h2>Validation Demo Form</h2>
+
+<form action="">
+    <label for="username">Pick a 4 letter username:</label>
+    <input type="text" placeholder="Username" id="username" required minlength="4">
+    <input type="email" placeholder="Email">
+    <button>Submit</button>
+</form>
